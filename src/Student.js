@@ -81,7 +81,7 @@ class StudentController {
             this.server_error(data.message);
         });
 
-        socket.on('ping-response', time => {
+        socket.on('ping_mathnet-response', time => {
             this.ping_response(time);
         });
 
@@ -455,7 +455,7 @@ class StudentController {
 
     // This function takes a time and pings it
     ping(time) {
-        this.socket.emit('ping', time);
+        this.socket.emit('ping_mathnet', time);
     };
 
     //This function takes a username and class_id from the user

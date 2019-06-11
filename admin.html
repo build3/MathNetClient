@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <meta charset="UTF-8"> 
+  <meta charset="UTF-8">
   <title>MathNet Admin View</title>
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
@@ -25,7 +25,7 @@
 <!--      <li role="presentation"><a href="#filtered_merged_view" aria-controls="design" role="tab" data-toggle="tab" id="filtered_merged_view_tab" style="display:none">Filtered Merged View</a></li>-->
 <!--      <li role="presentation"><a href="#overlayed_image_view" aria-controls="design" role="tab" data-toggle="tab" id="overlayed_image_view_tab" style="display:none">Overlayed Image View</a></li>-->
     </ul>
-  
+
     <div class="tab-content">
       <div role="tabpanel" class="tab-pane active" id="admin">
         <div class="col-md-12 col-sm-12">
@@ -66,7 +66,7 @@
               <div class="col-md-4 col-sm-4 col-md-offset-4 col-sm-offset-4" style="text-align: center">
                 <input class="btn btn-default new_user" type="button" value="Click Here" /><br/><br/>
               </div>
-            </div>  
+            </div>
 
           </div>
           <!-- Main View  Ends-->
@@ -102,7 +102,7 @@
           </div>
           <!-- Username View Ends -->
 
-          <h5 class = "ping"> Ping : 0 </h5>
+          <h5 class = "ping"> Ping : waiting </h5>
 
           <!-- This div appears when an admin leaves a class or has not made on yet -->
           <div class="create_view" style="display:none">
@@ -131,25 +131,25 @@
               <div class="col-md-4 col-sm-4 col-md-offset-4 col-sm-offset-4">
                   <h3 style="text-align: center"> Create New Class</h3>
               </div>
-                
+
             </div>
 
             <!-- New Class -->
             <div class="col-md-12 col-sm-12">
               <div class="col-md-4 col-sm-4 col-md-offset-4 col-sm-offset-4">
-                <input type="text" class="form-control class_input" id="class_input" name="class_input" required="" placeholder="Class Name"/> 
+                <input type="text" class="form-control class_input" id="class_input" name="class_input" required="" placeholder="Class Name"/>
                 <p class = "error error_class_input" hidden> Class Name Already Exists </p> <br/>
                 <p class = "error empty_class_input" hidden> Class Name Can't Be Empty </p> <br/>
                 <input type="number" class="form-control group_input" id="group_input" name="group_input" required="" placeholder="Number Of Groups"/><br/>
               </div>
-            </div>    
+            </div>
             <!-- The buttons -->
             <div class="col-md-12 col-sm-12">
               <div class="col-md-4 col-sm-4 col-md-offset-4 col-sm-offset-4" style="text-align: center">
                 <input class="btn btn-primary btn-block create_button" type="button" value="Create Class" /><br/><br/>
                 <input id = "logout_class_button" class="btn btn-default btn-danger logout_class_button" type="button" value="Logout">
               </div>
-            </div>  
+            </div>
             <!-- End Of Buttons -->
           </div>
 
@@ -163,7 +163,7 @@
             <div class="col-md-12 col-sm-12">
               <div class="col-md-4 col-sm-4">
                 <input class="btn btn-default btn-danger leave_button" type="button" style="margin-right:1em;" value="Leave Class">
-                <input id = "delete_class_button" class="btn btn-danger delete_class_button" type="button" value="Delete Class"> 
+                <input id = "delete_class_button" class="btn btn-danger delete_class_button" type="button" value="Delete Class">
               </div>
               <div class="col-md-4 col-sm-4">
                 <h1 class = "class_name" style = "text-align: center; margin-top:-5px;"></h1>
@@ -174,7 +174,7 @@
                 <input class="btn btn-primary delete_button" type="button" style="float:right; margin-right: 1em;" value="Delete Group"> &emsp;
                 <br/><br/>
               </div>
-            </div> 
+            </div>
 
             <!-- The place to store the lists -->
             <div class="manage_view" hidden>
@@ -188,7 +188,7 @@
               <td><hr /></td>
             </table> <br/>
 
-            <div class="col-md-12 lists"></div> 
+            <div class="col-md-12 lists"></div>
 
           </div>
         </div>
@@ -200,8 +200,8 @@
         <div class="col-md-12 col-sm-12">
           <h3> Settings </h3>
           <h4> Change Password </h4>
-          <p class="error error_password_mismatch" hidden> Passwords do not match <br/> </p> 
-          <p class="error error_password_incorrect" hidden> Incorrect password <br/> </p> 
+          <p class="error error_password_mismatch" hidden> Passwords do not match <br/> </p>
+          <p class="error error_password_incorrect" hidden> Incorrect password <br/> </p>
           <input type="password" class="form-control" id="current_password" name="password" required="" placeholder="Current password"/>
           <input type="password" class="form-control" id="changed_password" name="password" required="" placeholder="New password"/>
           <input type="password" class="form-control" id="retyped_changed_password" name="password" required="" placeholder="Retype new password"/>
@@ -213,7 +213,7 @@
       <div role="tabpanel" class="tab-pane" id="design">
         <div class="col-md-12 col-sm-12">
           <h3> Designer</h3>
-          <h5 class = "ping"> Ping : 0 </h5>
+          <h5 class = "ping"> Ping : waiting </h5>
 
           <button class="accordion">CREATE</button>
             <div class="panel panel-accordion col-md-12 col-sm-12"> <br/>
@@ -238,11 +238,11 @@
                         <input type="checkbox" id="send-toolbar-checkbox" value="1" checked> Send Toolbar </input>
                       </label>
                     </div>
-                    
+
                 </div>
                 <button class="btn btn-primary btn-resetview">Reset View</button>
                 <div class="javascriptapplet">
-                  <div class="geogebrawebapplet applet-activity-designer" id="appletContainer" style="width:100%;height:650px;display: block;"></div> 
+                  <div class="geogebrawebapplet applet-activity-designer" id="appletContainer" style="width:100%;height:650px;display: block;"></div>
                 </div>
                 <br/><br/><br/>
             </div>
@@ -264,7 +264,7 @@
                 </div>
               </div>
             </div>
-          
+
             <div class="ggbtoolbar row">
               <div class="col-md-8 col-sm-12">
                 <div id = "toolbar-target-0" class="col-md-1 col-sm-1 toolbar-target"></div>
@@ -285,7 +285,7 @@
                   </button>
               </div>
               <div class="col-md-4 col-sm-12">
-                <input type="checkbox" id="axisToggle" checked> Axis Display</input>                
+                <input type="checkbox" id="axisToggle" checked> Axis Display</input>
                 <input type="checkbox" id="gridToggle" checked> Grid Display</input><br/>
                 Perspective
                 <select id="perspectiveSelect">
@@ -311,19 +311,19 @@
                   <input type="text" id="coord_x_max" style="margin-left:50px;"></input> X Max <br/>
                   <input type="text" id="coord_y_min" style="margin-left:100px;"></input> <br/>
                   <span style="margin-left:105px;">Y Min</span> <br/>
-                    
+
 
                   Axis Steps <br/>
                   X-axis <input type="text" id="axis_step_x"></input> &ensp;
                   Y-axis <input type="text" id="axis_step_y"></input> &ensp;
                   Z-axis <input type="text" id="axis_step_z"></input> <br/>
-                  
+
                   <!-- Code for Graphics 2 -->
                   <br/>
-                  <input type="checkbox" id="g2Toggle" checked> Use the Above Settings for Graphics 2</input> 
+                  <input type="checkbox" id="g2Toggle" checked> Use the Above Settings for Graphics 2</input>
                   <div id = 'g2Box'>
 		  	<h4> Graphics 2 </h4>
-		  	<input type="checkbox" id="g2axisToggle" checked> Axis Display</input>            
+		  	<input type="checkbox" id="g2axisToggle" checked> Axis Display</input>
 			<input type="checkbox" id="g2gridToggle" checked> Grid Display</input><br/>
 		  	<br/>
 		        <div id="g2coord-axis">
@@ -359,25 +359,25 @@
       <div role="tabpanel" class="tab-pane" id="view">
         <div class="col-md-12">
           <h3>Class View</h3>
-          <h5 class = "ping"> Ping : 0 </h5>
+          <h5 class = "ping"> Ping : waiting </h5>
           <div id="views_checkboxes" class="panel panel-default"></div>
           <div id="clear_buttons">
             <input class="btn btn-danger clear_class_button" type="button" value="Clear Class">
             <input class="btn btn-primary clear_group_button" type="button" value="Clear Group"></br>
             <form class="choices"></form>
           </div>
-          <div class="javascriptapplet" id="views_jsapp"></div> 
+          <div class="javascriptapplet" id="views_jsapp"></div>
         </div>
       </div> <!-- End of view tab -->
 
-	  <!-- Filtered Merged View Tab -->	
+	  <!-- Filtered Merged View Tab -->
       <div role="tabpanel" class="tab-pane" id="filtered_merged_view">
         <div class="col-md-12">
           <h3>Individual Group Views</h3>
-          <h5 class = "ping"> Ping : 0 </h5>
+          <h5 class = "ping"> Ping : waiting </h5>
           <div id="group_select_checkboxes" class="panel panel-default"></div>
           <div id="filter_merge_items" class="panel panel-default"></div>
-          <div class="javascriptapplet" id="individual_groups_view_jsapps"></div> 
+          <div class="javascriptapplet" id="individual_groups_view_jsapps"></div>
           <div class="javascriptapplet" id="filtered_merge"></div>
         </div>
       </div> <!-- End of filtered merged view tab -->
@@ -386,13 +386,13 @@
       <div role="tabpanel" class="tab-pane" id="overlayed_image_view">
         <div class="col-md-12">
           <h3>Individual Group Views</h3>
-          <h5 class = "ping"> Ping : 0 </h5>
+          <h5 class = "ping"> Ping : waiting </h5>
           <div id="overlayed_image_views_checkboxes" class="panel panel-default"></div>
           <div class="javascriptapplet" id="overlayed_image_views_jsapps"></div>
           <br>
           <div id="overlayed_image_div" class="panel panel-default"></div>
         </div>
-      </div> <!-- End of overlayed image view tab -->	
+      </div> <!-- End of overlayed image view tab -->
 
 
     </div> <!-- End of table-content -->
@@ -457,7 +457,7 @@
   </script>
   <script type="text/javascript" src="dist/admin.entry.js"></script>
 </footer>
-  
+
 </body>
 
 </html>
