@@ -1174,7 +1174,7 @@ class Admin {
             this.server_error(data.message);
         });
 
-        socket.on('ping-response', (time) => {
+        socket.on('ping-mathnet-response', (time) => {
             this.ping_response(time);
         });
 
@@ -1270,7 +1270,7 @@ class Admin {
 
     // This function takes a time and pings it
     ping(time) {
-        this.socket.emit('ping', time);
+        this.socket.emit('ping-mathnet', time);
     }
 
 
