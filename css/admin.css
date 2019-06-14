@@ -1,4 +1,4 @@
-hr { 
+hr {
     display: block;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -75,7 +75,7 @@ hr {
 
 #get-classes{
     margin-bottom: 2em;
-    max-height:300px; 
+    max-height:300px;
     overflow:auto;
     text-align: center;
 }
@@ -185,8 +185,8 @@ hr {
 #views_checkboxes label input, #group_select_checkboxes label input, #overlayed_image_views_checkboxes label input {
   margin: 0 .25em 0 0;
 }
-.nav-tabs>li.active>a, 
-.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
 .nav-tabs>li.active>a:hover{
   border:1px solid transparent;
 }
@@ -341,11 +341,23 @@ div.panel-accordion.show {
     position: absolute; top: 0; bottom: 0;
     right: 117px;
     border: 2px solid #999999; border-radius: 20px;
-    transition: all 0.3s ease-in 0s; 
+    transition: all 0.3s ease-in 0s;
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
     margin-left: 0;
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-    right: 0; 
+    right: 0;
+}
+.group-webapplet {
+    width: 100%;
+    height: 650px;
+    display: block;
+    visibility: hidden;
+}
+.group-merge-webapplet
+{
+  width: 100%;
+  height: 650px;
+  display: block;
 }

@@ -111,6 +111,11 @@ class Admin {
             $retyped_changed_password: $('#retyped_changed_password'),
             $change_password_button: $('#change_password_button')
         };
+        this.templates = {
+            merge_view_update_toggle: require("../templates/handlebars/merge_view_update_toggle.handlebars"),
+            newgroup:                 require("../templates/handlebars/newgroup.handlebars"),
+            mergegroup:               require("../templates/handlebars/mergegroup.handlebars")
+        };
 
         this.admin_data_per_group = {};
         this.$default_toolset = '0|1,501,67,5,19,72,75,76|2,15,45,18,65,7,37|4,3,8,9,13,44,58,47|16,51,64,70|10,34,53,11,24,20,22,21,23|55,56,57,12|36,46,38,49,50,71|30,29,54,32,31,33|17,26,62,73,14,68|25,52,60,61|40,41,42,27,28,35,6';
@@ -1037,9 +1042,7 @@ class Admin {
                 this.views.$design_toolbox.empty();
                 this.views.$views_jsapp.empty();
 
-                let merge_view_update_toggle = '<div class="onoffswitch" style="display:none;"> <input type="checkbox" name="onoffswitch" '
-                    +'class="onoffswitch-checkbox" id="myonoffswitchmerge" onchange="liveUpdatesCheckboxChangeMerge(this);"> </input> <label class="onoffswitch-label" for="myonoffswitchmerge">'
-                    +'<span class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span> </label></div>';
+                let merge_view_update_toggle = this.templates.merge_view_update_toggle;
                 this.views.$views_jsapp.append(merge_view_update_toggle);
 
                 $('#views_checkboxes').html('<div class="panel-heading"><h3 class="panel-title">Show Groups</h3></div><div class="panel-body"></div>');
@@ -1074,9 +1077,7 @@ class Admin {
                         "screenshotGenerator":false,
                         "preventFocus":true
                     };
-                    let newgroup = '<div class="views_group_'+i+' col-md-4 col-sm-5 col-lg-4" ><h4><a href="javascript:redirect('+i+')"> Group ' + i +
-                        '</h4><div class="geogebrawebapplet" id="appletContainer'+ i +
-                        '"style="width:100%;height:650px;display:block;visibility:hidden;"></div></div>';
+                    let newgroup = this.templates.newgroup({i: i});
 
                     let checkbox = '<label><input checked type="checkbox"  value="applet'+i+'" name="views_group_'+ i
                         + '">Group '+ i + '</label>';
@@ -1140,8 +1141,7 @@ class Admin {
                     "screenshotGenerator":false,
                     "preventFocus":true
                 };
-                let mergegroup = '<div class="merge_group" style="visibility:hidden"><h4> Merge Group</h4><div class="geogebrawebapplet"' +
-                    'id="appletContainer' + numgroups + '"style="width:100%;height:650px;display:block;"></div></div><br/>';
+                let mergegroup = this.templates.mergegroup({numgroups: numgroups});
 
                 let mergebutton = $('<input class="btn btn-default mergeview_button" type="button" value="Merge Checked Views" />');
                 let unmergebutton = $('<input class="btn btn-default unmergeview_button" type="button" value="Unmerge Views" style="display:none;">');
