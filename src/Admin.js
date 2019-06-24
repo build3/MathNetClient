@@ -1045,6 +1045,10 @@ class Admin {
                 let merge_view_update_toggle = this.templates.merge_view_update_toggle;
                 this.views.$views_jsapp.append(merge_view_update_toggle);
 
+                $('.onoffswitch-checkbox').on('change', (e)=>{
+                    this.liveUpdatesCheckboxChangeMerge(e, e.target);
+                });
+
                 $('#views_checkboxes').html('<div class="panel-heading"><h3 class="panel-title">Show Groups</h3></div><div class="panel-body"></div>');
                 let numgroups = ($('ul.groups div').length)+1;
                 this.applets = [];
@@ -1914,9 +1918,9 @@ class Admin {
     }
 
     //Called when the Live/Not Live Toggle is Set/Unset for the Merged View
-    liveUpdatesCheckboxChangeMerge(checkbox) {
+    liveUpdatesCheckboxChangeMerge(event, checkbox) {
         if (checkbox.checked) {
-            view_merge(this);
+            this.view_merge(event);
         }
     }
 
@@ -1937,7 +1941,7 @@ class Admin {
         const tab = $('a[data-toggle="tab"][aria-expanded=true]').html();
         if (tab === "View") {
             this.applets[group_id - 1].appletUpdate(xml, toolbar, null, group_id, username, obj_xml, obj_label, obj_cmd_str, type_of_req);
-            if ($('.unmergeview_button').is(":visible") && $('#myonoffswitchmerge').is(':checked')) {
+            if ($('.unmergeview_button').is(":visible") && $('#myOnOffSwitchMerge').is(':checked')) {
                 this.view_merge(this);
             }
         } else if (tab === "Filtered Merged View") {
@@ -1960,7 +1964,7 @@ class Admin {
         const tab = $('a[data-toggle="tab"][aria-expanded=true]').html();
         if (tab === "View") {
             this.applets[group_id - 1].appletSetExtXML(xml, toolbar, null, group_id);
-            if ($('.unmergeview_button').is(":visible") && $('#myonoffswitchmerge').is(':checked')) {
+            if ($('.unmergeview_button').is(":visible") && $('#myOnOffSwitchMerge').is(':checked')) {
                 this.view_merge(this);
             }
 

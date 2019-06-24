@@ -7,6 +7,7 @@ hr {
     border-style: inset;
     border-width: 1px;
 }
+
 .axis path,
 .axis line{
   fill: none;
@@ -37,6 +38,7 @@ hr {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
 .info_box{
   background-color: #428bca;
   width: 200px;
@@ -79,6 +81,7 @@ hr {
     overflow:auto;
     text-align: center;
 }
+
 #get-classes button{
   margin: .25em;
   width:20%
@@ -87,6 +90,7 @@ hr {
 #get-classes div:hover{
   background-color: rgba(211, 214, 34, 0.42);
 }
+
 #redirect_modal .modal-title {
   text-align: center;
 }
@@ -106,6 +110,7 @@ hr {
   display:block;
   border:1px solid #abc;
 }
+
 .btn-toolbox{
   height: 40px;
   width: 40px;
@@ -119,6 +124,7 @@ hr {
   position: relative;
   z-index:10001;
 }
+
 .btn-toolbox img{
   height: 40px;
   width: 40px;
@@ -126,6 +132,7 @@ hr {
   top: 0;
   left: 0
 }
+
 .btn-toolbox button{
   position: absolute;
   border-radius:50%;
@@ -143,6 +150,7 @@ hr {
   top:-.25em;
   right:-.5em;
 }
+
 /*.btn-trash {
   border:0;
   background:transparent;
@@ -150,6 +158,7 @@ hr {
 
 /*.btn-sendtoolbar{
 }
+
 .btn-clear {
   margin:.50em 11em;
   height:2em;
@@ -157,6 +166,7 @@ hr {
   text-align: center;
 
 }
+
 .btn-sendtoolbar{
   margin:.5em 1em;
 }*/
@@ -175,27 +185,34 @@ hr {
   text-align: center;
   background: #eee;
 }
+
 .toolbar-target div.btn-toolbox{
   top:0!important;
   left:0!important;
 }
+
 #views_checkboxes label, #group_select_checkboxes label, #overlayed_image_views_checkboxes label {
   margin:0 1.5em 0 0;
 }
+
 #views_checkboxes label input, #group_select_checkboxes label input, #overlayed_image_views_checkboxes label input {
   margin: 0 .25em 0 0;
 }
+
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:focus,
 .nav-tabs>li.active>a:hover{
   border:1px solid transparent;
 }
+
 .groups li{
   margin-bottom: 1em;
 }
+
 .groups div{
   margin:0 0 0 2em;
 }
+
 .list{
 
   background-color: rgb(238, 238, 238);
@@ -207,6 +224,7 @@ hr {
 .tick line{
   opacity: 0.2;
 }
+
 /*#trash{
   position : relative;
   top : 5px;
@@ -223,22 +241,26 @@ hr {
   border-width: 1px; */
   margin:10px;
 }
+
 circle {
   fill: #fff;
   cursor: move;
   stroke: steelblue;
   stroke-width: 1.5px;
 }
+
 #toolbar_select{
 
   width:60%;
   height:100px;
 }
+
 #construction_select{
 
   width:60%;
   height:100px;
 }
+
 #coord-axis input[type="text"]{
   width: 50px;
 }
@@ -264,6 +286,7 @@ button.accordion {
 /*button.accordion.active, button.accordion:hover {
     background-color: #ddd;
 }
+
 */
 button.accordion:after {
     content: '\02795';
@@ -300,6 +323,7 @@ div.panel-accordion.show {
 .parent_group{
   font-weight: bold;
 }
+
 .child_group{
   padding-left: 16px;
 }
@@ -308,33 +332,40 @@ div.panel-accordion.show {
     position: relative; width: 150px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
+
 .onoffswitch-checkbox {
     display: none;
 }
+
 .onoffswitch-label {
     display: block; overflow: hidden; cursor: pointer;
     border: 2px solid #999999; border-radius: 20px;
 }
+
 .onoffswitch-inner {
     display: block; width: 200%; margin-left: -100%;
     transition: margin 0.3s ease-in 0s;
 }
+
 .onoffswitch-inner:before, .onoffswitch-inner:after {
     display: block; float: left; width: 50%; height: 29px; padding: 0; line-height: 29px;
     font-size: 13px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
     box-sizing: border-box;
 }
+
 .onoffswitch-inner:before {
     content: "LIVE";
     padding-left: 10px;
     background-color: #3498EB; color: #FFFFFF;
 }
+
 .onoffswitch-inner:after {
     content: "NOT LIVE";
     padding-right: 10px;
     background-color: #EEEEEE; color: #999999;
     text-align: right;
 }
+
 .onoffswitch-switch {
     display: block; width: 22px; margin: 3.5px;
     background: #FFFFFF;
@@ -343,18 +374,22 @@ div.panel-accordion.show {
     border: 2px solid #999999; border-radius: 20px;
     transition: all 0.3s ease-in 0s;
 }
+
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
     margin-left: 0;
 }
+
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
     right: 0;
 }
+
 .group-webapplet {
     width: 100%;
     height: 650px;
     display: block;
     visibility: hidden;
 }
+
 .group-merge-webapplet
 {
   width: 100%;
