@@ -876,7 +876,7 @@ $(function() {
             $views_jsapp.empty();
 
             var merge_view_update_toggle = '<div class="onoffswitch" style="display:none;"> <input type="checkbox" name="onoffswitch" '
-            +'class="onoffswitch-checkbox" id="myonoffswitchmerge" onchange="liveUpdatesCheckboxChangeMerge(this);"> </input> <label class="onoffswitch-label" for="myonoffswitchmerge">' 
+            +'class="onoffswitch-checkbox" id="myOnOffSwitchMerge" onchange="liveUpdatesCheckboxChangeMerge(this);"> </input> <label class="onoffswitch-label" for="myOnOffSwitchMerge">' 
             +'<span class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span> </label></div>';
             $views_jsapp.append(merge_view_update_toggle);
 
